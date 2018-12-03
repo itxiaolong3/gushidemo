@@ -33,13 +33,15 @@
                 <td style="height:80px; line-height:80px; text-align:center;">{$v['id']}</td>
 
                 {if $v['position']==1}<td style="height:80px; line-height:80px; text-align:center;">首页</td>
+                {elseif $v['type']==3}
+                <td style="height:80px; line-height:80px; text-align:center;">首页底部</td>
                 {else}
                 <td style="height:80px; line-height:80px; text-align:center;">故事</td>
                 {/if}
                 <th style="height:80px; text-align:center;"><img style="width:120px; height:80px;" src="{php echo tomedia($v['img'])}" /></td>
                 <td style="height:80px; line-height:80px; text-align:center;">{$v['comment']}</td>
                 {if $v['type']==0} <td style="height:80px; line-height:80px; text-align:center;">{$v['zjtitle']}</td>
-              {elseif $v['type']==2}
+              {elseif $v['type']>=2}
                 <td style="height:80px; line-height:80px; text-align:center;">其他小程序</td>
                 {else}
                 <td style="height:80px; line-height:80px; text-align:center;">{$v['title']}</td>

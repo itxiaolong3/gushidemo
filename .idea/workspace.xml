@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7ffeec6f-8e62-4fb1-9ff3-b4b7d2e768fe" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="854">
+              <caret line="422" column="25" lean-forward="true" selection-start-line="422" selection-start-column="25" selection-end-line="422" selection-end-column="25" />
+              <folding>
+                <marker date="1543820192846" expanded="true" signature="331:412" ph="SELECT * FRO... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="1190:1254" ph="SELECT * FRO... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="2611:2689" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="4241:4319" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="5070:5134" ph="SELECT * FRO... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="6582:6662" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="8298:8378" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="9135:9199" ph="SELECT * FRO... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="10950:11021" ph="select count... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="11573:11638" ph="select * fro... ${tablename($table2)}" />
+                <marker date="1543820192846" expanded="true" signature="13654:13731" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="13793:13858" ph="select * fro... ${tablename($table2)}" />
+                <marker date="1543820192846" expanded="true" signature="16430:16507" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="17421:17563" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="17723:17794" ph="select count... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="18126:18216" ph="select * fro... ${tablename($table2)}" />
+                <marker date="1543820192846" expanded="true" signature="19842:19919" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="20277:20367" ph="select * fro... ${tablename($table2)}" />
+                <marker date="1543820192846" expanded="true" signature="22329:22406" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="23279:23406" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="23603:23674" ph="select count... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="24916:24995" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="26320:26399" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="27325:27468" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="27664:27735" ph="select count... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="29126:29205" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="30773:30852" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="35803:36042" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="36582:36693" ph="select count... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="37155:37232" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="40460:40697" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="41235:41317" ph="select count... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="41862:42131" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="42578:42662" ph="select count... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="43147:43226" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="47749:48002" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="48449:48520" ph="select count... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="48984:49150" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="49659:49730" ph="select count... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="51882:51959" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="57132:57269" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="58081:58152" ph="select count... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="60593:60716" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="63941:64022" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="65048:65268" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="65427:65498" ph="select count... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="65890:66078" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="66238:66309" ph="select count... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="66736:66815" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="68483:68562" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="69548:69740" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="69900:69971" ph="select count... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="70390:70470" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="71343:71444" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="71604:71675" ph="select count... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="72166:72243" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="73604:73681" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="75745:75964" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="76291:76362" ph="select count... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="76792:77011" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="77339:77410" ph="select count... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="77859:78013" ph="select * fro... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="78173:78244" ph="select count... ${tablename($table)}" />
+                <marker date="1543820192846" expanded="true" signature="78660:78739" ph="select * fro... ${tablename($table)}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="banner.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/template/banner.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="38" column="83" lean-forward="false" selection-start-line="38" selection-start-column="83" selection-end-line="38" selection-end-column="83" />
+              <folding>
+                <element signature="n#style#0;n#th#7;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#10;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addbanner.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/addbanner.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editbanner.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/editbanner.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>addbanner</find>
+      <find>item</find>
+      <find>edit</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/template/addbanner.html" />
+        <option value="$PROJECT_DIR$/template/editbanner.html" />
+        <option value="$PROJECT_DIR$/site.php" />
+        <option value="$PROJECT_DIR$/template/banner.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-238" />
+    <option name="y" value="93" />
+    <option name="width" value="1907" />
+    <option name="height" value="973" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="gushidemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gushidemo" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="gushidemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gushidemo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="E:/mydemo/paofu" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ffeec6f-8e62-4fb1-9ff3-b4b7d2e768fe" name="Default" comment="" />
+      <created>1543818684145</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543818684145</updated>
+      <workItem from="1543818686247" duration="2719000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2719000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13965885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wxapp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1540948933000" expanded="true" signature="1145:1209" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="1973:2054" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="2847:2956" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="4819:4900" ph="SELECT * FRO... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="9583:9661" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="10353:10469" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="11438:11521" ph="select zj_id... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="12769:12961" ph="select gs.*,... ${tablename($table1)}" />
+            <marker date="1540948933000" expanded="true" signature="12994:13257" ph="select gsr.*... ${tablename($table3)}" />
+            <marker date="1540948933000" expanded="true" signature="13356:13508" ph="select gs.*,... ${tablename($table1)}" />
+            <marker date="1540948933000" expanded="true" signature="13541:13758" ph="select gsr.*... ${tablename($table3)}" />
+            <marker date="1540948933000" expanded="true" signature="13852:14031" ph="select gs.*,... ${tablename($table1)}" />
+            <marker date="1540948933000" expanded="true" signature="14064:14311" ph="select gsr.*... ${tablename($table3)}" />
+            <marker date="1540948933000" expanded="true" signature="14405:14582" ph="select gs.*,... ${tablename($table1)}" />
+            <marker date="1540948933000" expanded="true" signature="14615:14860" ph="select gsr.*... ${tablename($table3)}" />
+            <marker date="1540948933000" expanded="true" signature="14955:15134" ph="select gs.*,... ${tablename($table1)}" />
+            <marker date="1540948933000" expanded="true" signature="15167:15412" ph="select gsr.*... ${tablename($table3)}" />
+            <marker date="1540948933000" expanded="true" signature="15485:15637" ph="select gs.*,... ${tablename($table1)}" />
+            <marker date="1540948933000" expanded="true" signature="15670:15887" ph="select gsr.*... ${tablename($table3)}" />
+            <marker date="1540948933000" expanded="true" signature="15935:16015" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="18130:18218" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="19212:19326" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="20291:20380" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="37258:37416" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="37555:37702" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="37841:37986" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="38093:38237" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="38524:38666" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="38805:38936" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="39075:39204" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="39311:39439" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="39571:39700" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="39792:39947" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="41691:41906" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="41827:41899" ph="SELECT COUNT... ims_story_gushiread" />
+            <marker date="1540948933000" expanded="true" signature="42210:42310" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="42434:42610" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="42532:42604" ph="SELECT COUNT... ims_story_gushiread" />
+            <marker date="1540948933000" expanded="true" signature="42735:42837" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="42932:43032" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="43279:43494" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="43415:43487" ph="SELECT COUNT... ims_story_gushiread" />
+            <marker date="1540948933000" expanded="true" signature="43761:43861" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="43985:44161" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="44083:44155" ph="SELECT COUNT... ims_story_gushiread" />
+            <marker date="1540948933000" expanded="true" signature="44286:44388" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="44454:44554" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="44801:45016" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="44937:45009" ph="SELECT COUNT... ims_story_gushiread" />
+            <marker date="1540948933000" expanded="true" signature="45320:45420" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="45544:45720" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="45642:45714" ph="SELECT COUNT... ims_story_gushiread" />
+            <marker date="1540948933000" expanded="true" signature="45845:45947" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="46042:46142" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="46389:46604" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="46525:46597" ph="SELECT COUNT... ims_story_gushiread" />
+            <marker date="1540948933000" expanded="true" signature="46908:47008" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="47132:47308" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="47230:47302" ph="SELECT COUNT... ims_story_gushiread" />
+            <marker date="1540948933000" expanded="true" signature="47433:47535" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="47630:47730" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="47939:48154" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="48075:48147" ph="SELECT COUNT... ims_story_gushiread" />
+            <marker date="1540948933000" expanded="true" signature="48458:48558" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="48682:48858" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="48780:48852" ph="SELECT COUNT... ims_story_gushiread" />
+            <marker date="1540948933000" expanded="true" signature="48983:49085" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="49180:49280" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="50127:50226" ph="SELECT COUNT... ${tablename($table1)}" />
+            <marker date="1540948933000" expanded="true" signature="50706:50852" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="51070:51156" ph="SELECT COUNT... " />
+            <marker date="1540948933000" expanded="true" signature="52118:52314" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="53110:53393" ph="select gs.id... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="54046:54122" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="54140:54347" ph="select gs.*,... ${tablename($table1)}" />
+            <marker date="1540948933000" expanded="true" signature="54672:54771" ph="SELECT COUNT... ${tablename($table1)}" />
+            <marker date="1540948933000" expanded="true" signature="55583:55659" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="55677:55868" ph="select gs.*,... ${tablename($table1)}" />
+            <marker date="1540948933000" expanded="true" signature="57256:57510" ph="select gs.id... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="57536:57609" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="58088:58180" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="58288:58439" ph="select * fro... ${tablename($tablelinst)}" />
+            <marker date="1540948933000" expanded="true" signature="58634:58788" ph="select * fro... ${tablename($tableshoucang)}" />
+            <marker date="1540948933000" expanded="true" signature="58896:59096" ph="select * fro... ${tablename($tablepinlun)}" />
+            <marker date="1540948933000" expanded="true" signature="59369:59569" ph="select * fro... ${tablename($tablepinlun)}" />
+            <marker date="1540948933000" expanded="true" signature="59685:59788" ph="select * fro... ${tablename($tablepinlun)}" />
+            <marker date="1540948933000" expanded="true" signature="61142:61233" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="61515:61614" ph="SELECT COUNT... ${tablename($table1)}" />
+            <marker date="1540948933000" expanded="true" signature="62172:62255" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="62584:62683" ph="SELECT COUNT... ${tablename($table1)}" />
+            <marker date="1540948933000" expanded="true" signature="63241:63397" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="65895:65986" ph="select p_cou... ${tablename($tablepictext)}" />
+            <marker date="1540948933000" expanded="true" signature="66684:66791" ph="delete from " />
+            <marker date="1540948933000" expanded="true" signature="68116:68219" ph="delete from " />
+            <marker date="1540948933000" expanded="true" signature="68354:68460" ph="delete from " />
+            <marker date="1540948933000" expanded="true" signature="68598:68703" ph="delete from " />
+            <marker date="1540948933000" expanded="true" signature="68841:68948" ph="delete from " />
+            <marker date="1540948933000" expanded="true" signature="70173:70268" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="71671:71766" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="72767:72903" ph="select sc.g_... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="73790:73928" ph="select sc.g_... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="75097:75192" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="81454:81576" ph="select * fro... ${tablename($table)}" />
+            <marker date="1540948933000" expanded="true" signature="84682:84743" ph="select * fro... ${tablename($table)}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/addbanner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/editbanner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="854">
+          <caret line="422" column="25" lean-forward="true" selection-start-line="422" selection-start-column="25" selection-end-line="422" selection-end-column="25" />
+          <folding>
+            <marker date="1543820192846" expanded="true" signature="331:412" ph="SELECT * FRO... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="1190:1254" ph="SELECT * FRO... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="2611:2689" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="4241:4319" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="5070:5134" ph="SELECT * FRO... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="6582:6662" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="8298:8378" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="9135:9199" ph="SELECT * FRO... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="10950:11021" ph="select count... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="11573:11638" ph="select * fro... ${tablename($table2)}" />
+            <marker date="1543820192846" expanded="true" signature="13654:13731" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="13793:13858" ph="select * fro... ${tablename($table2)}" />
+            <marker date="1543820192846" expanded="true" signature="16430:16507" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="17421:17563" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="17723:17794" ph="select count... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="18126:18216" ph="select * fro... ${tablename($table2)}" />
+            <marker date="1543820192846" expanded="true" signature="19842:19919" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="20277:20367" ph="select * fro... ${tablename($table2)}" />
+            <marker date="1543820192846" expanded="true" signature="22329:22406" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="23279:23406" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="23603:23674" ph="select count... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="24916:24995" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="26320:26399" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="27325:27468" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="27664:27735" ph="select count... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="29126:29205" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="30773:30852" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="35803:36042" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="36582:36693" ph="select count... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="37155:37232" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="40460:40697" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="41235:41317" ph="select count... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="41862:42131" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="42578:42662" ph="select count... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="43147:43226" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="47749:48002" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="48449:48520" ph="select count... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="48984:49150" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="49659:49730" ph="select count... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="51882:51959" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="57132:57269" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="58081:58152" ph="select count... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="60593:60716" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="63941:64022" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="65048:65268" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="65427:65498" ph="select count... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="65890:66078" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="66238:66309" ph="select count... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="66736:66815" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="68483:68562" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="69548:69740" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="69900:69971" ph="select count... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="70390:70470" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="71343:71444" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="71604:71675" ph="select count... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="72166:72243" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="73604:73681" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="75745:75964" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="76291:76362" ph="select count... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="76792:77011" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="77339:77410" ph="select count... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="77859:78013" ph="select * fro... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="78173:78244" ph="select count... ${tablename($table)}" />
+            <marker date="1543820192846" expanded="true" signature="78660:78739" ph="select * fro... ${tablename($table)}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/banner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="38" column="83" lean-forward="false" selection-start-line="38" selection-start-column="83" selection-end-line="38" selection-end-column="83" />
+          <folding>
+            <element signature="n#style#0;n#th#7;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#10;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

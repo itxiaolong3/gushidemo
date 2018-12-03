@@ -346,7 +346,7 @@ class TonghuagushiModuleSite extends WeModuleSite
             } else {
                 $arr['img'] = $_GPC['img'];
             }
-			if ($_GPC['item']==2){
+			if ($_GPC['item']>=2){
                 if (empty($_GPC['gourl'])) {
                     message("appid不能为空", referer(), 'error');
                 } else {
@@ -415,7 +415,7 @@ class TonghuagushiModuleSite extends WeModuleSite
                     } else {
                         $arr['img'] = $_GPC['img'];
                     }
-                    if ($_GPC['item']==2){
+                    if ($result['type']>=2){
                         if (empty($_GPC['gourl'])) {
                             message("appid不能为空", referer(), 'error');
                         } else {
