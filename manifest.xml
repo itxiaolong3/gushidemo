@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.we7.cc" versionCode="">
+	<application setting="false">
+		<name><![CDATA[织布熊故事]]></name>
+		<identifie><![CDATA[tonghuagushi]]></identifie>
+		<version><![CDATA[1.0]]></version>
+		<ability><![CDATA[织布熊故事]]></ability>
+		<type><![CDATA[business]]></type>
+		<description><![CDATA[这个是织布熊故事描述]]></description>
+		<author><![CDATA[itxiaolong]]></author>
+		<url><![CDATA[https://pj.dede1.com]]></url>
+		<setting><![CDATA[]]></setting>
+	</application>
+	<platform>
+		<subscribes>
+		</subscribes>
+		<handles>
+		</handles>
+		<rule embed="false" />
+		<card embed="false" />
+		<supports>
+			<item type="wxapp" />
+		</supports>
+	</platform>
+	<bindings>
+		<menu>
+			<entry title="管理中心" do="site" state="" direct="false" />
+		</menu>
+		<page>
+			<entry title="首页" do="/tonghuagushi/pages/index/index" state="" direct="" />
+			<entry title="个人中心" do="/tonghuagushi/pages/my/my" state="" direct="" />
+		</page>
+	</bindings>
+	<permissions>
+	</permissions>
+	<install><![CDATA[]]></install>
+	<uninstall><![CDATA[]]></uninstall>
+	<upgrade><![CDATA[]]></upgrade>
+</manifest>

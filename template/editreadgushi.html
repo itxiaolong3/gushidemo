@@ -1,0 +1,58 @@
+{template 'common/header-zunyang'}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">编辑图文故事</h3>
+    </div>
+    <div class="panel-body">
+        <form action="" method="post" class="form-horizontal" role="form" id="form1" >
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">排序</div>
+                        <input type="text" class="form-control" name="orders" value="{$result['orders']}"/>
+                    </div>
+                    <span>注意：请修改数字不大于{$orders['orders']},否则会替换为顶置</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">点赞数</div>
+                        <input type="text" class="form-control" name="goodnum" value="{$result['r_goodnum']}"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">收听数</div>
+                        <input type="text" class="form-control" name="listennum" value="{$result['r_listennum']}"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-12 col-sm-2 col-md-2 col-lg-1 control-label"></label>
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <input type="submit" class="btn btn-danger" value="提交">
+                    <input type="hidden" name="token" value="{$_W['token']}">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+
+    $(function(){
+        $('#form1').submit(function(){
+
+            return true;
+        });
+
+        $('body').on("click",'.remove',function(e){
+            $(this).parent('div').parent('div').remove();
+        })
+    });
+</script>
+{template 'common/footer'}

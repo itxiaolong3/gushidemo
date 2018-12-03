@@ -1,0 +1,42 @@
+{template 'common/header-zunyang'}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        图库分类列表
+    </div>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th style="width:80px; text-align:center;">编号</th>
+                <th style="width:100px; text-align:center;">分类名称</th>
+                <th style="width:120px; text-align:center;">添加时间</th>
+                <th style="width:80px; text-align:center;">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            {if empty($fenlei_list)}
+            <tr>
+                <td colspan="5" style="text-align: center;">暂无分类</td>
+            </tr>
+            {else}
+            {loop $fenlei_list $v}
+            <tr>
+                <td style="height:50px; line-height:50px; text-align:center;">{$v['id']}</td>
+                <td style="height:50px; line-height:50px; text-align:center;">{$v['typename']}</td>
+                <td style="height:50px; line-height:50px; text-align:center;">{php echo date('Y-m-d H:m:s',$v['fl_addtime'])}</td>
+                <td style="height:50px; line-height:50px; text-align:center;">
+                    <a href="{php echo $this->createWebUrl('edittukufenlei',array('m'=>'story','id'=>$v['id']))}">编辑</a>&nbsp;&nbsp;
+                    <a href="{php echo $this->createWebUrl('deltukufenlei',array('m'=>'story','id'=>$v['id']))}">删除</a>
+                </td>
+            </tr>
+            {/loop}
+            {/if}
+            </tbody>
+        </table>
+    </div>
+    <div class="text-right">
+        {$pager}
+    </div>
+</div>
+</div>
+{template 'common/footer'}

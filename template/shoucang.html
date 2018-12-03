@@ -1,0 +1,41 @@
+{template 'common/header-zunyang'}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        故事收藏列表
+    </div>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th style="width:80px; text-align:center;">id</th>
+                <th style="width:80px; text-align:center;">故事图片</th>
+                <th style="width:100px; text-align:center;">故事标题</th>
+                <th style="width:100px; text-align:center;">收藏者</th>
+                <th style="width:100px; text-align:center;">收藏时间</th>
+            </tr>
+            </thead>
+            <tbody>
+            {if empty($result_list)}
+            <tr>
+                <td colspan="7" style="text-align: center;">暂无收藏记录</td>
+            </tr>
+            {else}
+            {loop $result_list $k $v}
+            <tr>
+                <td style="height:80px; line-height:80px; text-align:center;">{$v['sc_id']}</td>
+                <td style="width:80px; text-align:center;"><img style="width:90px; height:80px;" src="{php echo tomedia($imgs[$k][0])}" /></td>
+                <td style="height:80px; line-height:80px; text-align:center;">{$v['title']}</td>
+                <td style="height:80px; line-height:80px; text-align:center;">{$v['nickname']}</td>
+                <td style="height:80px;width:200px; line-height:80px; text-align:center;">{php echo date('Y-m-d H:m:s',$v['addtime'])}</td>
+            </tr>
+            {/loop}
+            {/if}
+            </tbody>
+        </table>
+    </div>
+    <div class="text-right">
+        {$pager}
+    </div>
+</div>
+</div>
+{template 'common/footer'}

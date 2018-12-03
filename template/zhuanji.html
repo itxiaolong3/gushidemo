@@ -1,0 +1,50 @@
+{template 'common/header-zunyang'}
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/lrsjng.jquery-qrcode/0.14.0/jquery-qrcode.js"></script>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        专辑列表&nbsp&nbsp||<span style="color: #0d8ddb;"><a href="{php echo $this->createWebUrl('addzhuanji',array('m'=>'tonghuagushi'))}">&nbsp添加</a></span>
+    </div>
+
+    <div class="table-responsive">
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th style="width:80px; text-align:center;">编号</th>
+                <th style="width:80px; text-align:center;">专辑概述</th>
+                <th style="width:80px; text-align:center;">封面</th>
+                <th style="width:80px; text-align:center;">添加时间</th>
+                <th style="width:80px; text-align:center;">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            {if empty($zhuanjiinfo)}
+            <tr>
+                <td colspan="5" style="text-align: center;">暂无专辑</td>
+            </tr>
+            {else}
+            {loop $zhuanjiinfo $v}
+            <tr>
+                <td style="height:80px; line-height:80px; text-align:center;">{$v['zj_id']}</td>
+                <td style="height:80px; line-height:80px; text-align:center;">{$v['zj_desc']}</td>
+                <td style="height:80px; line-height:80px; text-align:center;"><img style="width:120px; height:80px;" src="{php echo tomedia($v['zj_img'])}" /></td>
+                <td style="height:80px; line-height:80px; text-align:center;">{php echo date('Y-m-d H:m:s',$v['zj_addtime'])}</td>
+                <td style="height:80px; line-height:80px; text-align:center;">
+                    <a href="{php echo $this->createWebUrl('editzhuanji',array('m'=>'tonghuagushi','id'=>$v['zj_id']))}">查看/编辑</a>&nbsp;&nbsp;
+                    <a href="{php echo $this->createWebUrl('delzhuanji',array('m'=>'tonghuagushi','id'=>$v['zj_id']))}">删除</a>
+                </td>
+            </tr>
+            {/loop}
+            {/if}
+            </tbody>
+        </table>
+
+    </div>
+    <script>
+        //jQuery('#qrcode').qrcode({width: 200,height: 200,correctLevel:0,text: "不知道哦"});
+    </script>
+
+</div>
+</div>
+{template 'common/footer'}

@@ -1,0 +1,64 @@
+{template 'common/header-zunyang'}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        分享后的文字设置
+    </div>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th style="width:80px; text-align:center;">编号</th>
+                <!--<th style="width:80px; text-align:center;">文字内容</th>-->
+                <th style="width:80px; text-align:center;">二维码</th>
+                <th style="width:100px; text-align:center;">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            {if empty($result_list)}
+            <tr>
+                <td colspan="7" style="text-align: center;">暂无设置
+                    <span style="color: #0d8ddb;"><a href="{php echo $this->createWebUrl('addshareafter',array('m'=>'story_shareafter'))}">&nbsp去设置</a></span>
+                </td>
+            </tr>
+            {else}
+            {loop $result_list $v}
+            <tr>
+                <td style="height:50px; line-height:50px; text-align:center;">{$v['id']}</td>
+                <!--<td style="height:50px; line-height:50px; text-align:center;">{$v['content']}</td>-->
+                <th style="height:80px; text-align:center;"><img style="width:80px; height:80px;" src="{$v['qrcode']}" /></td>
+                <td style="height:50px; line-height:50px; text-align:center;">
+                    <a href="{php echo $this->createWebUrl('editshareafter',array('m'=>'story_shareafter','id'=>$v['id']))}">设置</a>&nbsp;&nbsp;
+                    <a href="{php echo $this->createWebUrl('delshareafter',array('m'=>'story_shareafter','id'=>$v['id']))}" id="deles">删除</a>
+                </td>
+            </tr>
+            {/loop}
+            {/if}
+            </tbody>
+        </table>
+    </div>
+    <div class="text-right">
+        {$pager}
+    </div>
+</div>
+</div>
+<script>
+//    $(function () {
+//       $("#deles").click(function () {
+//           //alert("点击了我");//"您真的确定要删除吗？\n\n请确认！"
+//           del("您真的确定要删除吗？\n\n请确认！");
+//       });
+//        function del(msg) {
+//            var msg =msg;
+//            if (confirm(msg)==true){
+//                console.log("点击了确认");
+//
+//                return true;
+//            }else{
+//                console.log("点击了取消");
+//                return false;
+//            }
+//        }
+//    });
+
+</script>
+{template 'common/footer'}

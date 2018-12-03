@@ -1,0 +1,107 @@
+{template 'common/header-zunyang'}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">添加图文</h3>
+    </div>
+    <div class="panel-body">
+        <form action="" method="post" class="form-horizontal" role="form" id="form1" >
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">故事类型</div>
+                        <select name="p_type" class="form-control" id="yuyan" onchange="chooseChange()">
+                            <option value="0" selected="selected">寓言故事</option>
+                            <option value="1">成语故事</option>
+                            <option value="2">科学故事</option>
+                            <option value="3">经典故事</option>
+                            <option value="4">精选故事</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">故事标题</div>
+                        <input type="text" class="form-control" name="p_title" value="" placeholder="填写故事标题"/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">排序</div>
+                        <input type="text" class="form-control" name="p_count" value="" placeholder="请输入大于0的数字"/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">作者</div>
+                        <input type="text" class="form-control" name="p_auther" value="" placeholder="作者"/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">上传配套故事音频</div>
+                        {php echo tpl_form_field_audio('r_yuyinurl');}
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">故事封面图片</div>
+                        {php echo tpl_form_field_image('p_toppic');}<span style="color: green">注意：图片尺寸建议(1000*500)，否则前端显示不美观</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label">故事图文</label>
+                <div class="col-md-9">{php echo tpl_ueditor('p_content');}</div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-12 col-sm-2 col-md-2 col-lg-1 control-label"></label>
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <input type="submit" class="btn btn-danger" value="提交">
+                    <input type="hidden" name="token" value="{$_W['token']}">
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    $(function(){
+        $('#form1').submit(function(){
+            if(!$.trim($(':text[name="p_title"]').val())) {
+                util.message('标题不可为空', '', 'error');
+                return false;
+            }
+            if(!$.trim($(':text[name="p_auther"]').val())) {
+                util.message('作者不可为空', '', 'error');
+                return false;
+            }
+            if(!$.trim($(':text[name="p_toppic"]').val())) {
+                util.message('封面图片不可为空', '', 'error');
+                return false;
+            }
+            if(!$.trim($(':text[name="r_yuyinurl"]').val())) {
+                util.message('配套故事不可为空', '', 'error');
+                return false;
+            }
+            ueditor = UE.getEditor('p_content');
+            console.log(ueditor);
+            if(!ueditor) {
+                util.message('故事内容不可为空', '', 'error');
+                return false;
+            }
+            return true;
+        });
+    });
+</script>
+{template 'common/footer'}

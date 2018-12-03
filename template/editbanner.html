@@ -1,0 +1,115 @@
+{template 'common/header-zunyang'}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">编辑轮播图</h3>
+    </div>
+    <div class="panel-body">
+        <form action="" method="post" class="form-horizontal" role="form" id="form1" >
+            {if $result['type']==2}
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">跳转目标小程序appid</div>
+                        <input type="text" class="form-control" name="gourl" placeholder="如：wx3d5c463c7d74066c" value="{$result['gourl']}"/>
+                    </div>
+                </div>
+            </div>
+            {else}{/if}
+
+            {if $result['type']==0}
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">要跳转的专辑</div>
+                        <select name="zj" class="form-control" id="zj">
+                            {if empty($zjlist)}
+                            <option value="" selected="selected">暂无专辑</option>
+                            {else}
+                            {loop $zjlist $v}
+                            <option value="{$v['zj_id']}|{$v['zj_desc']}" {if $result['zjid']==$v['zj_id']} selected="selected"{/if}>{$v['zj_desc']}</option>
+                            {/loop}
+                            {/if}
+                        </select>
+                    </div>
+                </div>
+            </div>
+            {else}{/if}
+            {if $result['type']==1}
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">轮播图所在位置</div>
+                        <select name="position" class="form-control">
+                            <option value="0" {if $result['position']==0} selected="selected"{/if}>故事</option>
+                            <option value="1" {if $result['position']==1} selected="selected"{/if}>首页</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            {else}{/if}
+            {if $result['type']==1}
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">跳转的广告</div>
+
+                        <select name="adid" class="form-control" id="fenlei">
+                            {if empty($adlist)}
+                            <option value="" selected="selected">暂无广告</option>
+                            {else}
+                            {loop $adlist $v}
+                            <option value="{$v['aid']}" {if $result['adid']==$v['aid']}selected="selected"{/if}>{$v['title']}</option>
+                            {/loop}
+                            {/if}
+                        </select>
+                    </div>
+                </div>
+            </div>
+            {else}{/if}
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">图片描述</div>
+                        <input type="text" class="form-control" name="comment" placeholder="填写图片的备注，如没有请填 无" value="{$result['comment']}"/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">轮播图</div>
+                        {php echo tpl_form_field_image('img',$result['img']);}<span style="color: green">注意：图片尺寸建议(1000*500)，否则前端显示不美观</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-12 col-sm-2 col-md-2 col-lg-1 control-label"></label>
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <input type="submit" class="btn btn-danger" value="提交">
+                    <input type="hidden" name="token" value="{$_W['token']}">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script>
+    $(function(){
+
+        $('#form1').submit(function(){
+            if(!$.trim($(':text[name="comment"]').val())) {
+                util.message('请填写图片描述', '', 'warning');
+                return false;
+            }
+            if(!$.trim($(':text[name="img"]').val())) {
+                util.message('请选择轮播图', '', 'warning');
+                return false;
+            }
+            return true;
+        });
+    });
+</script>
+{template 'common/footer'}

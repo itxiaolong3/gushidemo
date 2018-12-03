@@ -1,0 +1,120 @@
+{template 'common/header-zunyang'}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">编辑故事图文</h3>
+    </div>
+    <div class="panel-body">
+        <form action="" method="post" class="form-horizontal" role="form" id="form1" >
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">故事标题</div>
+                        <input type="text" class="form-control" name="p_title" value="{$result['p_title']}"/>
+                    </div>
+                </div>
+            </div>
+          <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">作者</div>
+                        <input type="text" class="form-control" name="p_auther" value="{$result['p_auther']}"  placeholder="作者"/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">故事类型</div>
+                        <select name="p_type" class="form-control" id="yuyan" onchange="chooseChange()">
+                            <option value="0" {if $result['p_type']==0}selected="selected"{/if}>寓言故事</option>
+                            <option value="1" {if $result['p_type']==1}selected="selected"{/if} >成语故事</option>
+                            <option value="2" {if $result['p_type']==2}selected="selected"{/if} >科学故事</option>
+                            <option value="3" {if $result['p_type']==3}selected="selected"{/if} >经典故事</option>
+                            <option value="4" {if $result['p_type']==4}selected="selected"{/if} >精选故事</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+          <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">上传配套故事音频</div>
+                        {php echo tpl_form_field_audio('r_yuyinurl',$result['r_yuyinurl']);}
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">排序</div>
+                        <input type="text" class="form-control" name="p_count" value="{$result['p_count']}"/>
+                    </div>
+                    <span>注意：请修改数字不大于{$orders['p_count']},否则会替换为顶置</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">封面图片</div>
+                        {php echo tpl_form_field_image('p_toppic',$result['p_toppic']);}<span style="color: green">注意：图片尺寸建议(1000*500)，否则前端显示不美观</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label">广告内容</label>
+                <div class="col-md-9">{php echo tpl_ueditor('p_content',$result['p_content']);}</div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-12 col-sm-2 col-md-2 col-lg-1 control-label"></label>
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <input type="submit" class="btn btn-danger" value="提交">
+                    <input type="hidden" name="token" value="{$_W['token']}">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    function chooseChange(){
+        var objS = document.getElementById("yuyan");
+        var grade = objS.options[objS.selectedIndex].value;
+       // alert("选中："+grade);
+        if(grade==='其他') {
+            $('#languages').attr("type",'text');
+        }else{
+            $('#languages').attr("type",'hidden');
+        }
+    }
+    $(function(){
+        $('#form1').submit(function(){
+           if(!$.trim($(':text[name="p_title"]').val())) {
+                util.message('标题不可为空', '', 'error');
+                return false;
+            }
+            if(!$.trim($(':text[name="p_auther"]').val())) {
+                util.message('作者不可为空', '', 'error');
+                return false;
+            }
+            if(!$.trim($(':text[name="p_toppic"]').val())) {
+                util.message('请选择图片', '', 'error');
+                return false;
+            }
+           if(!$.trim($(':text[name="r_yuyinurl"]').val())) {
+                util.message('请选择配套故事音频', '', 'error');
+                return false;
+            }
+            ueditor = UE.getEditor('p_content');
+            console.log(ueditor);
+            if(!ueditor) {
+                util.message('故事内容不可为空', '', 'error');
+                return false;
+            }
+            return true;
+        });
+
+        $('body').on("click",'.remove',function(e){
+            $(this).parent('div').parent('div').remove();
+        })
+    });
+</script>
+{template 'common/footer'}

@@ -1,0 +1,57 @@
+{template 'common/header-zunyang'}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">添加专辑</h3>
+    </div>
+    <div class="panel-body">
+        <form action="" method="post" class="form-horizontal" role="form" id="form1" >
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">专辑简介</div>
+                        <input type="text" class="form-control" name="zj_desc" value="" placeholder="选填"/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">封面图片</div>
+                        {php echo tpl_form_field_image('zj_img');}
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label">专辑内容</label>
+                <div class="col-md-9">{php echo tpl_ueditor('contents');}</div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-12 col-sm-2 col-md-2 col-lg-1 control-label"></label>
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <input type="submit" class="btn btn-danger" value="提交">
+                    <input type="hidden" name="token" value="{$_W['token']}">
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    $(function(){
+        $('#form1').submit(function(){
+            if(!$.trim($(':text[name="zj_img"]').val())) {
+                util.message('请选择封面图', '', 'error');
+                return false;
+            }
+            ueditor = UE.getEditor('contents');
+            console.log(ueditor);
+            if(!ueditor) {
+                util.message('内容不可为空', '', 'error');
+                return false;
+            }
+            return true;
+        });
+    });
+</script>
+{template 'common/footer'}

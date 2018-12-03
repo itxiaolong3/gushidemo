@@ -1,0 +1,48 @@
+{template 'common/header-zunyang'}
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/lrsjng.jquery-qrcode/0.14.0/jquery-qrcode.js"></script>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        广告列表&nbsp&nbsp||<span style="color: #0d8ddb;"><a href="{php echo $this->createWebUrl('addad',array('m'=>'tonghuagushi'))}">&nbsp添加</a></span>
+    </div>
+
+    <div class="table-responsive">
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th style="width:80px; text-align:center;">编号</th>
+                <th style="width:80px; text-align:center;">广告标题</th>
+                <th style="width:80px; text-align:center;">添加时间</th>
+                <th style="width:80px; text-align:center;">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            {if empty($adinfo)}
+            <tr>
+                <td colspan="5" style="text-align: center;">暂无广告内容</td>
+            </tr>
+            {else}
+            {loop $adinfo $v}
+            <tr>
+                <td style="height:80px; line-height:80px; text-align:center;">{$v['aid']}</td>
+                <td style="height:80px; line-height:80px; text-align:center;">{$v['title']}</td>
+                <td style="height:80px; line-height:80px; text-align:center;">{php echo date('Y-m-d H:m:s',$v['addtime'])}</td>
+                <td style="height:80px; line-height:80px; text-align:center;">
+                    <a href="{php echo $this->createWebUrl('editad',array('m'=>'tonghuagushi','id'=>$v['aid']))}">查看/编辑</a>&nbsp;&nbsp;
+                    <a href="{php echo $this->createWebUrl('delad',array('m'=>'tonghuagushi','id'=>$v['aid']))}">删除</a>
+                </td>
+            </tr>
+            {/loop}
+            {/if}
+            </tbody>
+        </table>
+
+    </div>
+    <script>
+        //jQuery('#qrcode').qrcode({width: 200,height: 200,correctLevel:0,text: "不知道哦"});
+    </script>
+
+</div>
+</div>
+{template 'common/footer'}

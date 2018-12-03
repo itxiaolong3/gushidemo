@@ -1,0 +1,53 @@
+{template 'common/header-zunyang'}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">添加背景音乐</h3>
+    </div>
+    <div class="panel-body">
+        <form action="" method="post" class="form-horizontal" role="form" id="form1" >
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">歌曲名称</div>
+                        <input type="text" class="form-control" name="name" value="" placeholder="如：故乡的原风景"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <div class="input-group">
+                        <div class="input-group-addon">上传背景音乐</div>
+                        {php echo tpl_form_field_audio('bjmusic');}
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-12 col-sm-2 col-md-2 col-lg-1 control-label"></label>
+                <div class="col-sm-8 col-lg-9 col-xs-12">
+                    <input type="submit" class="btn btn-danger" value="提交">
+                    <input type="hidden" name="token" value="{$_W['token']}">
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    $(function(){
+
+        $('#form1').submit(function(){
+            //alert($(':text[name="options"]').val());
+            if(!$.trim($(':text[name="name"]').val())) {
+                util.message('歌曲名称不可为空', '', 'error');
+                return false;
+            }
+            if(!$.trim($(':text[name="bjmusic"]').val())) {
+                util.message('请选择音乐', '', 'error');
+                return false;
+            }
+            return true;
+        });
+    });
+</script>
+{template 'common/footer'}
